@@ -27,7 +27,7 @@ dns_namesilo_add() {
   fi
 
   #save the api key and email to the account conf file.
-  _saveaccountconf Namesilo_Key "$Namesilo_Key"
+  _saveaccountconf Namesilo_Key $Namesilo_Key
 
   if ! _get_root "$fulldomain"; then
     _err "Unable to find domain specified."
